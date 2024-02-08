@@ -1,0 +1,33 @@
+<form>
+       
+    <div class=row>
+        <div class=col-1>
+          <label for="nomOperador">Operador</label>
+        </div>
+        <div class=col>
+          <input type="text" id="nomOperador" name="nomOperador" [(ngModel)]="nomOperador" class="form-control-sm" placeholder="Nombre del operador" />
+        </div>
+    </div>
+    
+    
+    <div class=row>
+        <div class=col-1>
+          <label for="numServicio">Numero de servicio</label>
+        </div>
+        <div class=col>
+          <input type="text" id="numServicio" name="numServicio" [(ngModel)]="numServicio" class="form-control-sm" placeholder="Numero de servicio" />
+        </div>
+    </div>
+    
+    <div class=row>
+        <div class=col-1>
+          <label for="nomCliente">Cliente</label>
+        </div>
+        <div class=col>
+          <input type="text" id="nomCliente" name="nomCliente" [(ngModel)]="nomCliente" class="form-control-sm" placeholder="Nombre del cliente" />
+        </div>
+    </div>
+    
+      <button type="submit" class="btn btn-primary" (click)="send()" >Enviar</button>
+    
+    </form>
